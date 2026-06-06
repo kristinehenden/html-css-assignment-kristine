@@ -41,15 +41,21 @@
     
 <main>
 <section class="cart-page">
-    <section class="breadcrumb">
-        <p>Homepage > Woman > All Jackets > The Rover Jacket > Shopping Cart</p>
-    </section>
+     <nav class="breadcrumb">
+        <a href="index.html">Homepage</a> ->
+        <a href="women.html">Women</a> ->
+        <a href="women.html">All Jackets</a> ->
+        <a href="product.html">The Rover Jacket</a> ->
+        <span>Shopping Cart</span>
+     </nav>
 
-    <h1>Shopping Cart</h1>
 
-    <div class="cart-layout">
-        <div class="cart-items">
-            <article class="cart-item">
+<h1>Shopping Cart</h1>
+
+<div class="cart-layout">
+    <div class="cart-items">
+        <article class="cart-item">
+  
             <img src="images/rover-jacket.png" alt="The Rover Jacket">
         
             <div class="cart-item-info">
@@ -57,40 +63,38 @@
                 <h3 class="cart-price">$159.00</h3>
                 <p>Colour: Red/Beige</p>
                 <p>Size: M</p>
-
                 <p class="stock-status">✓ In stock</p>
 
-                <div class="quantity-control">
-                    <button>-</button>
-                    <button>1</button>
-                    <button>+</button>
-                </div>
-
-                <button class="remove-button">
-                    <i class="fa-regular fa-trash-can"></i>
-                    <span>Remove</span>
-                </button>
+            <div class="quantity-control">
+                <button>-</button>
+                <button>1</button>
+                <button>+</button>
             </div>
 
-            <div class="delivery-box">
+            <button type="button" class="remove-button">
+                <i class="fa-regular fa-trash-can"></i>
+                <span>Remove</span>
+            </button>
+        </div>
 
-                <i class="fa-solid fa-truck delivery-icon"></i>
-                <div class="delivery-content">
-                    <p class="delivery-title">
-                        Congratulations - You earned free delivery
-                    </p>
-                    
-                    <p class="delivery-text">
-                        You are 0.00 $ away from free delivery
-                    </p>
+        <div class="delivery-box">
+            <i class="fa-solid fa-truck delivery-icon"></i>
+
+            <div class="delivery-content">
+                <p class="delivery-title">
+                    Congratulations - You earned free delivery
+                </p>    
+                <p class="delivery-text">
+                    You are 0.00 $ away from free delivery
+                </p>
                 <div class="delivery-progress">
                     <div class="delivery-bar"></div>
                 </div>
             </div>
         </div>
                 
-        </article>
-    </div>
+    </article>
+</div>
 
     <aside class="cart-summary">
         <h2>Order Summary</h2>
@@ -118,41 +122,50 @@
             <span>Continue Shopping</span>
         </a>
         <div class="safe-payment">
-            
             <p>Safe Payment</p>
-        <div class="payment-icons">
+        <div class="safe-payment-icons">
             <i class="fa-regular fa-square-check"></i>
             <i class="fa-regular fa-credit-card"></i>
         </div>
-        </div>
+    </div>
+    
     </aside>
     </div>
 </section>
 
 <section class="related-products">
-      <h2>You may also like</h2>
+        <h2>You may also like</h2>
+    
+    <div class="related-arrow left-arrow">
+        <i class="fa-solid fa-chevron-left"></i>
+    </div>
+    <div class="related-grid">
+        <article class="related-card">
+            <i class="fa-regular fa-heart"></i>
+            <img src="images/hiking-jacket.png" alt="hiking jacket">
+                <h3>The Hiking Jacket</h3>
+                <p>$139.00</p>
+                <a href="coming-soon.html">View Details -></a>
+            </article>
 
-  <div class="related-grid">
-    <article class="related-card">
-      <img src="images/hiking-jacket.png" alt="hiking jacket">
-      <h3>The Hiking Jacket</h3>
-      <p>$139.00</p>
-      <a href="product.html">View details →</a>
-    </article>
-
-    <article class="related-card">
-      <img src="images/explorer-jacket.png" alt="explorer jacket">
-      <h3>The Explorer Jacket</h3>
-      <p>$159.00</p>
-      <a href="product.html">View details →</a>
-    </article>
-
-    <article class="related-card">
-      <img src="images/comfort-jacket.png" alt="comfort jacket">
-      <h3>The Comfort Jacket</h3>
-      <p>$119.00</p>
-      <a href="product.html">View details →</a>
-    </article>
+        <article class="related-card">
+            <i class="fa-regular fa-heart"></i>
+            <img src="images/explorer-jacket.png" alt="explorer jacket">
+                <h3>The Explorer Jacket</h3>
+                <p>$159.00</p>
+                <a href="coming-soon.html">View Details -></a>
+            </article>
+                
+        <article class="related-card">
+            <i class="fa-regular fa-heart"></i>
+            <img src="images/comfort-jacket.png" alt="comfort jacket">
+                <h3>The Comfort Jacket</h3>
+                <p>$119.00</p>
+            <a href="coming-soon.html">View Details -></a>
+            </article>
+        <div class="related-arrow right-arrow">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
   </div>
 </section>
 
