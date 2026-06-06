@@ -157,7 +157,7 @@ SEARCH
     gap: 18px;
     background-color: var(--white-color);
     border-radius: 999px;
-    padding: 8px; 14px;
+    padding: 8px 14px;
 }
 .search-form .fa-magnifying-glass,
 .search-form svg {
@@ -1233,7 +1233,7 @@ CART PAGE
 
 .remove-button {
     display: flex;
-    align-items: ;
+    align-items: center;
     gap: 8px;
     margin-top: 18px;
     border: none;
@@ -1269,16 +1269,15 @@ CART PAGE
     border: 1px solid var(--primary-color);
     background-color: var(--white-color);
     color: var(--primary-color);
-    
+}   
 .checkout-button svg {
     width: 16px;
-    height: 16px
+    height: 16px;
     color: var(--white-color);
-}
 }
 .checkout-button svg,
 .continue-shopping-button svg {
-    width 16px;
+    width: 16px;
     height: 16px;
 }
 
