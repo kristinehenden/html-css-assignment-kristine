@@ -5,202 +5,252 @@
         <meta name="description" content="View products details for a RainyDays rain jacket.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RainyDays | Product Details</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/305b4ecc01.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     
-    <body>
-        <!-- Content for women's clothing page -->
-    <header>
-        <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="RainyDays logo">
-        </a>
+<body>
+<header>
 
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="RainyDays logo">
+    </a>
         <div class="icons">
-            <a href="#">head</a>
-            <a href="#">heart</a>
-            <a href="cart.html">cart</a>
+            <a href="coming-soon.html" aria-label="Account">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="coming-soon.html" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="cart.html" aria-label="Shopping cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
         </div>
+    </div>
 
-        <form class="search-form">
-            <label for="search" class="visually-hidden">Search</label>
-            <input type="search" id="search" name="search" placeholder="Search">
-        </form>
-    </header>
-    <main>
-        <section class="breadcrumb">
-            <p>
-                Homepage > Woman > All Jackets > The Rover Jacket
-            </p>
-        </section>
+    <form class="search-form">
+        <label for="search" class="visually-hidden">Search</label>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="search" name="search" placeholder="Search">
+    </form>
+</header>
 
-        <section class="product-detail">
-            <div class="product-images">
-                <div class="thumbnail-column">
-                    <div class="thumbnail-list">
-                        <img src="images/roverjacket1.jpg" alt="Front view of red rain jacket">
-                        <img src="images/roverjacket2.jpg" alt="Back view of red rain jacket">
-                        <img src="images/roverjacket3.jpg" alt="Side view of red rain jacket">
-                    </div>
+<main>
+    <section class="breadcrumb">
+        <p>
+            Homepage > Woman > All Jackets > The Rover Jacket
+        </p>
+    </section>
 
-                    <div class="thumbnail-arrow">⌄</div>
-                </div>
-
-                    <div class="main-product-image">
-                    <div class="zoom-icon">⌕</div>
-                        <img src="images/roverjacket1.jpg" alt="Red RainyDays Rover Jacket">
-                </div>
-        </div>
-
+<section class="product-detail">
+    <div class="product-images">
+    <div class="thumbnail-column">
+    <div class="thumbnail-list">
+        <img src="images/rover-jacket.png" alt="Front view of red rain jacket">
+        <img src="images/rover-jacket2.png" alt="Back view of the red rain jacket">
+        <img src="images/rover-jacket3.png" alt="Side view of the red rain jacket">
+    </div>
         
-        <div class="product-info">
-            <h1>The Rover Jacket</h1>
-            <p class="price">$159.00</p>
-            <p class="tax">Tax included | Free delivery</p>
+    <div class="thumbnail-arrow">
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+</div>
 
-            <p class="product-description">
-                A durable versatile rainjacket built for changing weather and every outdoor adventure. Waterproof, wind-resistant and engineeres for comfort.
-            </p>
-            <div class="colour-options">
-                <h3>Colour: Red/Beige</h3>
+    <div class="main-product-image">
+        <i class="fa-solid fa-magnifying-glass zoom icon"></i>
+        <img src="images/rover-jacket.png" alt="Red RainyDays Rover jacket">
+    </div>
+</div>
+    
+    <div class="product-info">
+        <h1>The Rover Jacket</h1>
+        <p class="price">$159.00</p>
+        <p class="tax">Tax included | Free delivery</p>
 
-            <div class="colour-buttons">
-                <button class="colour red active-colour" aria-label="Red jacket"></button>
-                <button class="colour green" aria-label="Green jacket"></button>
-                <button class="colour blue" aria-label="Blue jacket"></button>
-                <button class="colour black" aria-label="Black jacket"></button>
-            </div>
+        <p class="product-description">
+            <p>A durable versatile rainjacket built for changing weather and every outdoor adventure. Waterproof, wind-resistant and engineered for comfort.</p>
+        
+        <div class="colour-options">
+            <h3>Colour: Red/Beige</h3>
+
+        <div class="colour-buttons">
+            <button class="colour red active-colour" aria-label="Red jacket"></button>
+            <button class="colour green" aria-label="Green jacket"></button>
+            <button class="colour blue" aria-label="Blue jacket"></button>
+            <button class="colour black" aria-label="Black jacket"></button>
         </div>
+    </div>
 
         <div class="product-options">
-            <h3>Size</h3>
+            <h3>Size: M</h3>
 
-            <div class="size-buttons">
-                <button>S</button>
-                <button class="active-size">M</button>
-                <button>L</button>
-                <button>XL</button>
-            </div>
+        <div class="size-buttons">
+            <button>S</button>
+            <button class="active-size">M</button>
+            <button>L</button>
+            <button>XL</button>
         </div>
+    </div>
 
-        <p class="size-guide">Size Guide</p>
+    <p class="size-guide">Size Guide</p>
 
-            <div class="product-actions">
-                <a href="cart.html" class="add-to-cart-button">Add to Cart</a>
-                <a href="#" class="wishlist-button">♡ Add to Wishlist</a>
-            </div>
+    <div class="product-actions">
+        <a href="cart.html" class="add-to-cart-button">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Add to Cart</span>
+    </a>
+    <a href="coming-soon.html" class="wishlist-button">
+        <i class="fa-regular fa-heart"></i>
+        <span>Add to Wishlist</span>
+    </a>         
+</div>
+
+</section>
+
+    <section class="product-tabs-section">
+        <div class="product-description-content">
+        <div class="description-left">    
+        <div class="product-tabs">
+            <button>Description</button>
+            <button>Materials</button>
+            <button>Care Guide</button>
         </div>
-        </section>
-
-        <section class="product-tabs-section">
-            <div class="product-description-content">
-
-            <div class="description-left">    
-            <div class="product-tabs">
-                <button>Description</button>
-                <button>Materials</button>
-                <button>Care Guide</button>
-            </div>
         
-                <p>
-                    The Rover Jacket is where technical performance meets refined, feminine design. Engineered with a sleek, weather-resistant shell in a striking red, it freatures a tailored wait-cinching band and stowaway hoodie for maximum versatility. The reinforced beige cuffs and hidden zip-front offer a clean, modern aesthetic that transitions seamlessly from rugged trails to urban explorations.
-                </p>
+    <p>
+        The Rover Jacket is where technical performance meets refined, feminine design. Engineered with a sleek, weather-resistant shell in a striking red, it freatures a tailored wait-cinching band and stowaway hoodie for maximum versatility. The reinforced beige cuffs and hidden zip-front offer a clean, modern aesthetic that transitions seamlessly from rugged trails to urban explorations.
+    </p>
 
-                <ul>
-                    <li>Weatherproof Protection: High-performance rain shell-fabric</li>
-                    <li>Tailored Fit: Internal waist adjustment for a flattering silhouette</li>
-                    <li>Clean Design: Hidden zipper with protective storm flap</li>
-                    <li>Signature Details: Contrast beige accents and adjustable toggle hood</li>
-                </ul>
-                <p class="product-tagline">Push you Comfort Zone!</p>
-            </div>
+    <ul>
+        <li>Weatherproof Protection: High-performance rain shell-fabric</li>
+        <li>Tailored Fit: Internal waist adjustment for a flattering silhouette</li>
+        <li>Clean Design: Hidden zipper with protective storm flap</li>
+        <li>Signature Details: Contrast beige accents and adjustable toggle hood</li>
+    </ul>
+        <p class="product-tagline">Push your Comfort Zone!</p>
+    </div>
 
-            <div class="description-image">
-                <img src="images/descriptionimg.jpg" alt="People wearing RainyDays Jackets Outdoors">
+        <div class="description-image">
+            <img src="images/description.jpg" alt="People wearing RainyDays Jackets Outdoors">
+        </div>
+    </div>
+</section>
+
+    <section class="related-products">
+        <h2>You may also like</h2>
+
+    <div class="related-grid">
+        <article class="related-card">
+            <img src="images/hiking-jacket.png" alt="hiking jacket">
+                <h3>The Hiking Jacket</h3>
+                <p>$139.00</p>
+                <a href="product.html">View Details -></a>
+            </article>
+
+        <article class="related-card">
+            <img src="images/explorer-jacket.png" alt="explorer jacket">
+                <h3>The Explorer Jacket</h3>
+                <p>$159.00</p>
+                <a href="product.html">View Details -></a>
+            </article>
+                
+        <article class="related-card">
+            <img src="images/comfort-jacket.png" alt="comfort jacket">
+                <h3>The Comfort Jacket</h3>
+                <p>$119.00</p>
+            <a href="product.html">View Details -></a>
+            </article>
+        </div>
+    </section>
+
+    <section class="info-bar">
+        <div class="info-item">
+            <i class="fa-solid fa-truck"></i>
+        
+        <div>
+            <h3>Free Delivery over 100.00 $</h3>
+            <p>3-7 days delivery</p>
+        </div>
+    </div>
+    
+        <div class="info-item">
+            <i class="fa-solid fa-shield-halved"></i>
+        
+        <div>
+            <h3>5 years warranty</h3>
+            <p>on all jackets</p>
+        </div>
+    </div>
+
+        <div class="info-item">
+            <i class="fa-solid fa-arrows-rotate"></i>
+    
+        <div>
+            <h3>Free returns</h3>
+            <p>30 days return policy</p>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer>
+    <div class="footer-top">
+    <div class="footer-logo">
+        <img src="images/logo.png" alt="RainyDays logo">
+    </div>
+
+    <div class="footer-links">
+
+    <div class="footer-column">
+        <h3>Shop</h3>
+
+        <a href="women.html">Women</a>
+        <a href="men.html">Men</a>
+        <a href="coming-soon.html">Sale</a>
+        <a href="coming-soon.html">New Arrivals</a>
+        <a href="coming-soon.html">Gift Cards</a>
+    </div>
+
+    <div class="footer-column">
+        <h3>Customer Service</h3>
+            <a href="coming-soon.html">Shipping & Delivery</a>
+            <a href="coming-soon.html">Returns</a>
+            <a href="coming-soon.html">Exchanges</a>
+            <a href="coming-soon.html">FAQ</a>
+            <a href="coming-soon.html">Track Your Order</a>
+            <a href="coming-soon.html">Contact Us</a>
+        </div>
+
+            <div class="footer-column">
+                <h3>About</h3>
+
+                <a href="index.html">About Us</a>
+                <a href="coming-soon.html">Our Materials</a>
+                <a href="coming-soon.html">Sustainability</a>
+                <a href="coming-soon.html">Careers</a>
             </div>
         </div>
-        </section>
+    </div>
 
-        <section class="related-products">
-            <h2>You may also like</h2>
+    <div class="footer-social">
+        <h3>Follow Us</h3>
 
-            <div class="related-grid">
-                <article class="related-card">
-                    <img src="images/jacket1.jpg" alt="black hiking jacket"
-                    <h3>The Hiking Jacket</h3>
-                    <p>$139.00</p>
-                    <a href="product.html">View Details -></a>
-                </article>
-
-                <article class="related-card">
-                    <img src="images/jacket2.jpg" alt="black hiking jacket"
-                    <h3>The Explorer Jacket</h3>
-                    <p>$159.00</p>
-                    <a href="product.html">View Details -></a>
-                </article>
-                
-                <article class="related-card">
-                    <img src="images/jacket3.jpg" alt="black hiking jacket"
-                    <h3>The Comfort Jacket</h3>
-                    <p>$119.00</p>
-                    <a href="product.html">View Details -></a>
-                </article>
-            </div>
-        </section>
-
-        <section class="info-bar">
-            <div>
-                <h3>Free Delivery over $100.00</h3>
-                <p>3-7 days delivery</p>
-            </div>
-            <div>
-                <h3>5 years waranty</h3>
-                <p>on all jackets</p>
-            </div>
-            <div>
-                <h3>Free returns</h3>
-                <p>30 days return policy</p>
-            </div>
-        </section>
-    </main>
-
-     <footer>
-            <div class="footer-top">
-                <div class="footer-logo">
-                    <img src="images/logo.png" alt="RainyDays logo">
-                </div>
-
-                <div class="footer-links">
-
-                    <div class="footer-column">
-                        <h3>Shop</h3>
-
-                        <a href="#">Women</a>
-                        <a href="#">Men</a>
-                        <a href="#">Sale</a>
-                    </div>
-
-                    <div class="footer-column">
-                        <h3>Customer Service</h3>
-
-                        <a href="#">Shipping</a>
-                        <a href="#">Returns</a>
-                        <a href="#">Contact</a>
-                    </div>
-
-                    <div class="footer-column">
-                        <h3>About</h3>
-
-                        <a href="#">About Us</a>
-                        <a href="#">Sustainability</a>
-                        <a href="#">Careers</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 RainyDays. All rights reserved.</p>
-            </div>  
-        </footer>
+        <a href="coming-soon.html" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a href="coming-soon.html" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>Facebook</span>
+        </a>
+        <a href="coming-soon.html" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span>
+        </a>
+    </div>
+</footer>
 
     
     </body>

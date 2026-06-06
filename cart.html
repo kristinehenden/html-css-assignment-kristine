@@ -4,27 +4,39 @@
         <meta charset="UTF-8">
         <meta name="description" content="View your shopping cart at RainyDays">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rainy Days | Cart</title>
-        <link rel="stylesheet" href="style.css">
+        <title>RainyDays | Cart</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/305b4ecc01.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body>
-        <!-- Content for women's clothing page -->
-    <header>
-        <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="RainyDays logo">
-        </a>
+<body>
+<header>
 
-    <div class="icons">
-        <a href="#">head</a>
-        <a href="#">heart</a>
-        <a href="cart.html">cart</a>
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="RainyDays logo">
+    </a>
+        <div class="icons">
+            <a href="coming-soon.html" aria-label="Account">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="coming-soon.html" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="cart.html" aria-label="Shopping cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
     </div>
 
-    <form class="search-form">
-        <label for="cart-search" class="visually-hidden">Search</label>
-        <input type="search" id="cart-search" name="search" placeholder="Search">
+     <form class="search-form">
+        <label for="search" class="visually-hidden">Search</label>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="search" name="search" placeholder="Search">
     </form>
+
 </header>
     
 <main>
@@ -33,16 +45,16 @@
         <p>Homepage > Woman > All Jackets > The Rover Jacket > Shopping Cart</p>
     </section>
 
-        <h1>Shopping Cart</h1>
+    <h1>Shopping Cart</h1>
 
     <div class="cart-layout">
         <div class="cart-items">
-            <article class="cart-item".>
-            <img src="images/roverjacket1.jpg" alt="The Rover Jacket">
+            <article class="cart-item">
+            <img src="images/rover-jacket.png" alt="The Rover Jacket">
         
             <div class="cart-item-info">
                 <h2>The Rover Jacket</h2>
-
+                <h3 class="cart-price">$159.00</h3>
                 <p>Colour: Red/Beige</p>
                 <p>Size: M</p>
 
@@ -54,12 +66,32 @@
                     <button>+</button>
                 </div>
 
-                <p class="cart-price">$159.00</p>
-
-                <button class="remove-buttom">Remove</button>
+                <button class="remove-button">
+                    <i class="fa-regular fa-trash-can"></i>
+                    <span>Remove</span>
+                </button>
             </div>
+
+            <div class="delivery-box">
+
+                <i class="fa-solid fa-truck delivery-icon"></i>
+                <div class="delivery-content">
+                    <p class="delivery-title">
+                        Congratulations - You earned free delivery
+                    </p>
+                    
+                    <p class="delivery-text">
+                        You are 0.00 $ away from free delivery
+                    </p>
+                <div class="delivery-progress">
+                    <div class="delivery-bar"></div>
+                </div>
+            </div>
+        </div>
+                
         </article>
     </div>
+
     <aside class="cart-summary">
         <h2>Order Summary</h2>
         <div class="summary-line">
@@ -78,14 +110,141 @@
         </div>
 
         <a href="checkout.html" class="checkout-button">
-            Proceed to Checkout
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>Proceed to Checkout</span>
         </a>
+        <a href="women.html" class="continue-shopping-button">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Continue Shopping</span>
+        </a>
+        <div class="safe-payment">
+            
+            <p>Safe Payment</p>
+        <div class="payment-icons">
+            <i class="fa-regular fa-square-check"></i>
+            <i class="fa-regular fa-credit-card"></i>
+        </div>
+        </div>
     </aside>
     </div>
 </section>
-</main>
-<footer>
 
+<section class="related-products">
+      <h2>You may also like</h2>
+
+  <div class="related-grid">
+    <article class="related-card">
+      <img src="images/hiking-jacket.png" alt="hiking jacket">
+      <h3>The Hiking Jacket</h3>
+      <p>$139.00</p>
+      <a href="product.html">View details →</a>
+    </article>
+
+    <article class="related-card">
+      <img src="images/explorer-jacket.png" alt="explorer jacket">
+      <h3>The Explorer Jacket</h3>
+      <p>$159.00</p>
+      <a href="product.html">View details →</a>
+    </article>
+
+    <article class="related-card">
+      <img src="images/comfort-jacket.png" alt="comfort jacket">
+      <h3>The Comfort Jacket</h3>
+      <p>$119.00</p>
+      <a href="product.html">View details →</a>
+    </article>
+  </div>
+</section>
+
+    <section class="info-bar">
+        <div class="info-item">
+            <i class="fa-solid fa-truck"></i>
+        
+        <div>
+            <h3>Free Delivery over 100.00 $</h3>
+            <p>3-7 days delivery</p>
+        </div>
+    </div>
+    
+        <div class="info-item">
+            <i class="fa-solid fa-shield-halved"></i>
+        
+        <div>
+            <h3>5 years warranty</h3>
+            <p>on all jackets</p>
+        </div>
+    </div>
+
+        <div class="info-item">
+            <i class="fa-solid fa-arrows-rotate"></i>
+    
+        <div>
+            <h3>Free returns</h3>
+            <p>30 days return policy</p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-top">
+
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="RainyDays logo">
+        </div>
+
+        <div class="footer-links">
+
+            <div class="footer-column">
+                <h3>Shop</h3>
+
+                <a href="#">Women</a>
+                <a href="#">Men</a>
+                <a href="#">Sale</a>
+                <a href="#">New Arrivals</a>
+                <a href="#">Gift Cards</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+
+                <a href="#">Shipping & Delivery</a>
+                <a href="#">Returns</a>
+                <a href="#">Exchanges</a>
+                <a href="#">FAQ</a>
+                <a href="#">Track Your Order</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>About</h3>
+
+                <a href="#">About Us</a>
+                <a href="#">Our Materials</a>
+                <a href="#">Sustainability</a>
+                <a href="#">Careers</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-social">
+        <h3>Follow Us</h3>
+
+        <a href="coming-soon.html" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a href="coming-soon.html" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>Facebook</span>
+        </a>
+        <a href="coming-soon.html" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span>
+        </a>
+    </div>
 </footer>
 </body>
 

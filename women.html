@@ -1,114 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Browse women's jackets from Rainy Days.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Women's Jackets - RainyDays</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Browse women's jackets from RainyDays.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainyDays | Women's Jackets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/305b4ecc01.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <body>
-        <header>
-            <a href="index.html" class="logo"
-            <img src="images/logo.png" alt="RainyDays logo">
-        </a>
+<body>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="women.html">Women</a></li>
-                <li><a href="men.html">Men</a></li>
-                <li><a href="sale.html">Sale</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
 
-    <main> 
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Women's Jackets</h1>
-                <p>Find jackets built for every outdoor adventure</p>
-            </div>
-        </section>
-
-        <section class="category-filter">
-                <a href="#">All</a>
-                <a href="#">Hiking</a>
-                <a href="#">Climbing</a>
-                <a href="#">Canoeing</a>
-                <a href="#">Sale</a>
-        </section>
-
-        <section class="product-grid">
-            <div class="product-card">
-                <a href="product.html">
-                <img src="images/women-jacket1.jpg" alt="Women's blue rain jacket">
-                <h3>Explorer Jacket</h3>
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="RainyDays logo">
+    </a>
+        <div class="icons">
+            <a href="coming-soon.html" aria-label="Account">
+                <i class="fa-regular fa-user"></i>
             </a>
-                <p>$129</p>
-            </div>
+            <a href="coming-soon.html" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="cart.html" aria-label="Shopping cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </div>
+
+    <form class="search-form">
+        <label for="search" class="visually-hidden">Search</label>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="search" name="search" placeholder="Search">
+    </form>
+
+</header>
+
+<main>
+
+    <section class="women-hero">
+        <nav class="women-hero-nav">
+            <a href="women.html" class="active-hero-link">Woman</a>
+            <a href="men.html">Man</a>
+            <a href="sale.html">SALE</a>
+        </nav>
+
+        <div class="women-hero-text">
+            <h1>Women's Jackets</h1>
+            <p>Find jackets built for every outdoor adventure</p>
+        </div>
+    </section>
+
+    <section class="women-filter">
+        <a href="#" class="active-filter">All</a>
+        <a href="#">Hiking</a>
+        <a href="#">Climbing</a>
+        <a href="#">Canoeing</a>
+        <a href="#">Sale</a>
+    </section>
+
+    <section class="women-products">
+
+        <article class="women-card">
+            <span class="heart-icon">♡</span>
+            <img src="images/rover-jacket.png" alt="The Rover Jacket">
+            <h2>The Rover Jacket</h2>
+            <p>159.00 $</p>
+            <a href="product.html">View details →</a>
+        </article>
+
+        <article class="women-card">
+            <span class="heart-icon">♡</span>
+            <img src="images/adventure-jacket.png" alt="The Adventure Jacket">
+            <h2>The Adventure Jacket</h2>
+            <p>129.00 $</p>
+            <a href="product.html">View details →</a>
+        </article>
+
+        <article class="women-card">
+            <span class="heart-icon">♡</span>
+            <img src="images/pathfinder-jacket.png" alt="The Pathfinder Jacket">
+            <h2>The Pathfinder Jacket</h2>
+            <p>119.00 $</p>
+            <a href="product.html">View details →</a>
+        </article>
+
+        <article class="women-card">
+            <span class="heart-icon">♡</span>
+            <img src="images/hiking-jacket.png" alt="The Hiking Jacket">
+            <h2>The Hiking Jacket</h2>
+            <p>139.00 $</p>
+            <a href="product.html">View details →</a>
+        </article>
+
+        <article class="women-card">
+            <span class="heart-icon">♡</span>
+            <img src="images/explorer-jacket.png" alt="The Explorer Jacket">
+            <h2>The Explorer Jacket</h2>
+            <p>159.00 $</p>
+            <a href="product.html">View details →</a>
+        </article>
+
+        <article class="women-card">
+            <span class="heart-icon">♡</span>
+            <img src="images/comfort-jacket.png" alt="The Comfort Jacket">
+            <h2>The Comfort Jacket</h2>
+            <p>119.00 $</p>
+            <a href="product.html">View details →</a>
+        </article>
+
+    </section>
+
+    <section class="info-bar">
+        <div class="info-item">
+            <i class="fa-solid fa-truck"></i>
         
-            <div class="product-card">
-                <a href="product.html">
-                <img src="images/women-jacket2.jpg" alt="Women's red winter jacket">
-                <h3>Mountain Jacket</h3>
-                </a>
-                <p>$159</p>
+        <div>
+            <h3>Free Delivery over 100.00 $</h3>
+            <p>3-7 days delivery</p>
+        </div>
+    </div>
+    
+        <div class="info-item">
+            <i class="fa-solid fa-shield-halved"></i>
+        
+        <div>
+            <h3>5 years warranty</h3>
+            <p>on all jackets</p>
+        </div>
+    </div>
+
+        <div class="info-item">
+            <i class="fa-solid fa-arrows-rotate"></i>
+    
+        <div>
+            <h3>Free returns</h3>
+            <p>30 days return policy</p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-top">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="RainyDays logo">
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <a href="women.html">Women</a>
+                <a href="men.html">Men</a>
+                <a href="sale.html">Sale</a>
+                <a href="#">New Arrivals</a>
+                <a href="#">Gift Cards</a>
             </div>
 
-            <div class="product-card">
-                <a href="product.html">
-                <img src="images/women-jacket3.jpg" alt="Women's green rain jacket">
-                <h3>Storm Jacket</h3>
-                </a>
-                <p>$179</p>
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <a href="#">Shipping & Delivery</a>
+                <a href="#">Returns</a>
+                <a href="#">Exchanges</a>
+                <a href="#">FAQ</a>
+                <a href="#">Track Your Order</a>
+                <a href="#">Contact Us</a>
             </div>
 
-            <div class="product-card">
-                <a href="product.html">
-                <img src="images/women-jacket4.jpg" alt="Women's yellow rain jacket">
-                <h3>Adventure Jacket</h3>
-                </a>
-                <p>$149</p>
+            <div class="footer-column">
+                <h3>About</h3>
+                <a href="#">About Us</a>
+                <a href="#">Our Materials</a>
+                <a href="#">Sustainability</a>
+                <a href="#">Careers</a>
             </div>
+        </div>
+    </div>
 
-            <div class="product-card">
-                <a href="product.html">
-                <img src="images/women-jacket5.jpg" alt="Women's black rain jacket">
-                <h3>Classic Jacket</h3>
-                </a>
-                <p>$139</p>
-            </div>
+    <div class="footer-social">
+        <h3>Follow Us</h3>
 
-            <div class="product-card">
-                <a href="product.html">
-                <img src="images/women-jacket6.jpg" alt="Women's purple rain jacket">
-                <h3>Urban Jacket</h3>
-                </a>
-                <p>$169</p>
-            </div>
+        <a href="coming-soon.html" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a href="coming-soon.html" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>Facebook</span>
+        </a>
+        <a href="coming-soon.html" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span>
+        </a>
+    </div>
+</footer>
 
-            <section class="info-bar">
-                <div>
-                    <h3>Free Delivery over 100.00$</h3>
-                    <p>3-7 days delivery</p>
-                </div>
-
-                <div>
-                    <h3>5 years warranty</h3>
-                    <p>on all jackets</p>
-                </div>
-
-                <div>
-                    <h3>Free returns</h3>
-                    <p>30 days return policy</p>
-                </div>
-            </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 RainyDays. All rights reserved.</p>
-    </footer>
-    </body>
+</body>
 </html>

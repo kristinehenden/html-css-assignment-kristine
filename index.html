@@ -5,26 +5,38 @@
         <meta name="description" content="RainyDays sells durable rain jackets for outdoor adventures.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RainyDays | Home</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/305b4ecc01.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
     </head>
+
     <body>
-
-        <header>
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="RainyDays logo">
-            </a>
-
+    <header>
+        <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="RainyDays logo">
+    </a>
         <div class="icons">
-            <a href="#">head</a>
-            <a href="#">heart</a>
-            <a href="cart.html">cart</a>
+            <a href="coming-soon.html" aria-label="Account">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="coming-soon.html" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="cart.html" aria-label="Shopping cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
         </div>
+    </div>
 
-        <form class="search-form">
-            <label for="search" class="visually-hidden">Search</label>
-            <input type="search" id="search" name="search" placeholder="Search">          
-        </form>
-    </header>
+    <form class="search-form">
+        <label for="search" class="visually-hidden">Search</label>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="search" name="search" placeholder="Search">
+    </form>
+
+</header>
         
     <main>
         <section class="hero">
@@ -32,7 +44,7 @@
                 <ul>
                     <li><a href="women.html">Woman</a></li>
                     <li><a href="men.html">Man</a></li>
-                    <li><a href="sale.html">Sale</a></li>
+                    <li><a href="sale.html">SALE</a></li>
                 </ul>
             </nav>
             
@@ -43,7 +55,7 @@
         </section>
 
         <section class="about-section">
-            <img src="images/about.jpg" alt="Group of hikers wearing jackets">
+            <img src="images/index-about.jpg" alt="Group of hikers wearing jackets">
 
             <div class="about-text">
                 <h2>Pushing the comfort zone</h2>
@@ -51,20 +63,20 @@
                     Rainy Days creates durable and reliable rain jackets designed for outdoor adventures. Built for changing weather conditions,
                     our products combine comfort, functionality, and modern design, so you can explore with confidence, whatever the forecast.
                 </p>
-                <a href="#">About Us</a>
+                <a href="#">About us</a>
             </div>
         </section>
         <section class="activities">
             
             <div class="activities-title">
                 <p>EXPLORE BY ACTIVITY</p>
-                <h2>Find the adventure the suits you</h2>
+                <h2>Find the adventure that suits you</h2>
             </div>
 
             <div class="activities-grid">
 
                 <article class="activity-card">
-                    <img src="images/jacket1.jpg" alt="People canoeing outdoors">
+                    <img src="images/canoeing.jpg" alt="People canoeing outdoors">
 
                     <h3>Canoeing</h3>
                 
@@ -72,16 +84,16 @@
                 </article>
 
                 <article class="activity-card">
-                    <img src="images/jacket2.jpg" alt="Person hiking in the forest">
+                    <img src="images/hiking.jpg" alt="Person hiking in the forest">
 
                     <h3>Hiking</h3>
                 
                     <a href="women.html">Explore now -></a>
                 </article>
                 <article class="activity-card">
-                    <img src="images/jacket3.jpg" alt="Person biking outdoors">
+                    <img src="images/climbing.jpg" alt="Person climbing outdoors">
 
-                    <h3>Biking</h3>
+                    <h3>Climbing</h3>
                 
                     <a href="women.html">Explore now -></a>
                 </article>
@@ -89,58 +101,86 @@
         </section>
         <section class="newsletter">
             <div class="newsletter-content">
-                <p class="newsletter-icon">✉</p>
+
+                <div class="newsletter-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
                 <h2>Stay ready for your next adventure</h2>
-                <p>Sign up for exclusive offes, new arrivals and outdoor inspiration</p>
+                <p>Sign up for exclusive offers,</p>
+                <p>new arrivals and outdoor inspiration</p>
 
                 <form class="newsletter-form">
-                    <label for="email" class="visually-hidden">Email address</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email">
-                    <button type="submit">Subscribe</button>
+                    <div class="newsletter-input">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+                    <button>Subscribe</button>
+                </form>
             </div>
         </section>
 
     </main>
+<footer>
 
-        <footer>
-            <div class="footer-top">
-                <div class="footer-logo">
-                    <img src="images/logo.png" alt="RainyDays logo">
-                </div>
+    <div class="footer-top">
 
-                <div class="footer-links">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="RainyDays logo">
+        </div>
 
-                    <div class="footer-column">
-                        <h3>Shop</h3>
+        <div class="footer-links">
 
-                        <a href="#">Women</a>
-                        <a href="#">Men</a>
-                        <a href="#">Sale</a>
-                    </div>
+            <div class="footer-column">
+                <h3>Shop</h3>
 
-                    <div class="footer-column">
-                        <h3>Customer Service</h3>
-
-                        <a href="#">Shipping</a>
-                        <a href="#">Returns</a>
-                        <a href="#">Contact</a>
-                    </div>
-
-                    <div class="footer-column">
-                        <h3>About</h3>
-
-                        <a href="#">About Us</a>
-                        <a href="#">Sustainability</a>
-                        <a href="#">Careers</a>
-                    </div>
-                </div>
+                <a href="#">Women</a>
+                <a href="#">Men</a>
+                <a href="#">Sale</a>
+                <a href="#">New Arrivals</a>
+                <a href="#">Gift Cards</a>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2024 RainyDays. All rights reserved.</p>
-            </div>
-            
-        </footer>
+            <div class="footer-column">
+                <h3>Customer Service</h3>
 
+                <a href="#">Shipping & Delivery</a>
+                <a href="#">Returns</a>
+                <a href="#">Exchanges</a>
+                <a href="#">FAQ</a>
+                <a href="#">Track Your Order</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>About</h3>
+
+                <a href="#">About Us</a>
+                <a href="#">Our Materials</a>
+                <a href="#">Sustainability</a>
+                <a href="#">Careers</a>
+            </div>
+
+        </div>
+    </div>
+
+     <div class="footer-social">
+        <h3>Follow Us</h3>
+
+        <a href="coming-soon.html" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a href="coming-soon.html" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>Facebook</span>
+        </a>
+        <a href="coming-soon.html" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span>
+        </a>
+    </div>
+
+</footer>
+       
     </body>
 </html>
