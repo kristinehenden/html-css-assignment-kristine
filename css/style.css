@@ -135,13 +135,32 @@ ICONS
 .icons a {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     color: var(--white-color);
     font-size: 25px;
     transition: 0.2s ease;
 }
 .icons a:hover {
     opacity: 0.8;
+}
+.cart-icon {
+    position: relative;
+    display: inline-flex;
+}
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ========================
